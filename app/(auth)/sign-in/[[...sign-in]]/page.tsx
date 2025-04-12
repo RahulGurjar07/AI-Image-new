@@ -1,7 +1,13 @@
-import { SignIn } from '@clerk/nextjs'
+import { SignIn } from "@clerk/nextjs";
+import React from "react";
 
-const SignInPage = () => {
-  return <SignIn />
+const page = () => {
+    return (
+        <div className="flex-center glassmorphism-auth h-screen w-full">
+            <SignIn />
+        </div>
+    )
+
 }
-
-export default SignInPage
+// 
+export default page;
