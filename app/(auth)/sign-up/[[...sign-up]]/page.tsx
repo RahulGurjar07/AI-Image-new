@@ -1,7 +1,12 @@
-import { SignUp } from '@clerk/nextjs'
+import { SignUp } from "@clerk/nextjs"
 
-const SignUpPage = () => {
-  return <SignUp />
+const Page = () => {
+  return (
+    <div className="flex-center glassmorphism-auth h-screen w-full">
+      <SignUp />
+    </div>
+  )
 }
 
-export default SignUpPage
+export default Page
+// 
