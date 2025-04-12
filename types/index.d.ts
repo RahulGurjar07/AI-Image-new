@@ -9,7 +9,7 @@ declare type CreateUserParams = {
   lastName: string;
   photo: string;
 };
-
+// 
 declare type UpdateUserParams = {
   firstName: string;
   lastName: string;
@@ -116,4 +116,23 @@ declare type RemoveUrlQueryParams = {
 declare type SearchParamProps = {
   params: { id: string; type: TransformationTypeKey };
   searchParams: { [key: string]: string | string[] | undefined };
+};
+
+declare type TransformationFormProps = {
+  action: "Add" | "Update";
+  userId: string;
+  type: TransformationTypeKey;
+  creditBalance: number;
+  data?: IImage | null;
+  config?: Transformations | null;
+};
+
+declare type TransformedImageProps = {
+  image: any;
+  type: string;
+  title: string;
+  transformationConfig: Transformations | null;
+  isTransforming: boolean;
+  hasDownload?: boolean;
+  setIsTransforming?: React.Dispatch<React.SetStateAction<boolean>>;
 };
