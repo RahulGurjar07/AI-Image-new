@@ -10,6 +10,7 @@ const TransactionSchema = new Schema({
     required: true,
     unique: true,
   },
+  // 
   amount: {
     type: Number,
     required: true,
